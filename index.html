@@ -19,6 +19,11 @@
         background-color: #EEE;
     }
 
+    main {
+        width:1000px;
+        margin:0 auto;
+    }
+
     p, li {
         font-size: 1.2em;
     }
@@ -32,10 +37,15 @@
         color: #050233;
     }
 
-    #logo {
+    #title {
         font-family: 'Poppins', sans-serif;
         color: #050233;
         font-size: 5em
+    }
+
+    #title a, #title a:hover, #title a:visited, #title a:active {
+        color: inherit;
+        text-decoration: none;
     }
 
     .telegram-logo {
@@ -43,13 +53,28 @@
         width: 1.2em;
         height: 1.2em;
     }
+
+    @media (max-width: 600px) {
+        main {
+            width: 90%;
+            margin: 4%;
+        }
+
+        #title {
+            font-size: 3em;
+        }
+
+        #logo {
+            width: 80%;
+        }
+    }
 </style>
 <body>
-<main style="width:1000px;margin:0 auto;">
+<main>
     <header>
-        <img src="/bpp-logo.png" alt="" style="width:30em">
-        <div id="logo">
-            Barcelona Polyamory
+        <img id="logo" src="/bpp-logo.png" alt="Barcelona Polyamory logo">
+        <div id="title">
+            <a href="https://barcelonapolyamory.com">Barcelona Polyamory</a>
         </div>
     </header>
 
